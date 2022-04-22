@@ -429,7 +429,7 @@ def processed_img(img_path):
 
 def run():
     st.title("Birds Species Classification")
-    img1 = Image.open('C:/mario/Birds400/pexels-george-desipris-760984.jpg')
+    img1 = Image.open('./pexels-george-desipris-760984.jpg')
     img1 = img1.resize((800,400))
     st.image(img1,use_column_width=False)
   
@@ -446,6 +446,6 @@ def run():
 
         if st.button("Click Me!!",help="click on the button to find the above bird"):
             result = processed_img(save_image_path)
-            st.success("This Bird is: "+result)
+            st.success("This Bird is "+result)
 
 run()
