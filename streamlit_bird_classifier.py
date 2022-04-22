@@ -446,6 +446,6 @@ def run():
 
         if st.button("Click Me!!",help="click on the button to find the above bird"):
             result = processed_img(save_image_path)
-            st.success("This Bird is: "+result)
+            st.success("This Bird is "+result)
 
 run()
