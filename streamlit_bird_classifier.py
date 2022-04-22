@@ -6,7 +6,7 @@ from PIL import Image
 import streamlit as st
 from tensorflow.keras.utils import load_img,img_to_array
 
-model=torch.jit.load('C:/mario/Birds400/ResNet50_final_CPU.pt')
+model=torch.jit.load('./ResNet50_final_CPU.pt')
 lab = {0: 'ABBOTTS BABBLER',
  1: 'ABBOTTS BOOBY',
  2: 'ABYSSINIAN GROUND HORNBILL',
